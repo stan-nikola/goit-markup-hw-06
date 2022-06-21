@@ -431,11 +431,33 @@
 
   <div class=" backdrop is-hidden" data-modal>
     <div class="modal">
-      <button class="modal-btn" data-modal-close tupe="button">
-        <svg width="11" height="11">
-          <use href="./images/icons.svg#icon-modal-close"></use>
-        </svg>
-      </button>
+      <div class="modal-form" role="group">
+        <button class="modal-btn-close" data-modal-close tupe="button">
+          <svg width="11" height="11">
+            <use href="./images/icons.svg#icon-modal-close"></use>
+          </svg>
+        </button>
+        <h1 class="modal-title">Оставьте свои данные, мы вам перезвоним</h1>
+        <form class="modal-form">
+          <label name="user-name" for="user-name">Имя</label>
+          <input type="text" id="user-name">
+
+          <label name="user-tel" for="user-tel">Телефон</label>
+          <input type="tel" id="user-tel">
+
+          <label name="user-email" for="user-email">Почта</label>
+          <input type="email" id="user-email">
+
+          <label name="user-comment" for="user-comment">Комментарий</label>
+          <textarea id="user-comment" placeholder="Введите текст"></textarea>
+
+          <label name="user-policy" for="user-policy">Соглашаюсь с рассылкой и принимаю <a href="">Условия
+              договора</a></label>
+          <input type="checkbox" id="user-policy">
+
+          <button class="button modal-btn-submit" type="submit"><span>Отправить</span></button>
+        </form>
+      </div>
     </div>
   </div>
   <script src="./js/modal.js"></script>
