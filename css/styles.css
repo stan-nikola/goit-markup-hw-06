@@ -638,6 +638,39 @@ address {
 .footer-social-link:focus {
   background-color: var(--accent-color);
 }
+.subscribe {
+  margin-left: auto;
+}
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+}
+.subscribe input {
+  width: 358px;
+  height: 50px;
+  background-color: inherit;
+  color: var(--second-text-color);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding: 15px 16px;
+}
+.subscribe-btn {
+  display: flex;
+  align-items: center;
+  padding: 0 28px;
+  background-color: var(--accent-color);
+  color: var(--second-text-color);
+  margin-left: 12px;
+  font-weight: 700;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+}
+.subscribe-btn span {
+  margin-right: 10px;
+}
+
+/* backdrop */
 
 .backdrop {
   position: fixed;
