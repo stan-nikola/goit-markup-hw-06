@@ -439,21 +439,49 @@
         </button>
         <h1 class="modal-title">Оставьте свои данные, мы вам перезвоним</h1>
         <form class="modal-form">
-          <label name="user-name" for="user-name">Имя</label>
-          <input type="text" id="user-name">
+          <label class="label" name="user-name">
+            <span class="label-text">Имя</span>
+            <div class="label-thumb">
+              <input class="imput-field" type="text">
+              <svg class="imput-img" width="18" hight="18">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
+          </label>
 
-          <label name="user-tel" for="user-tel">Телефон</label>
-          <input type="tel" id="user-tel">
+          <label class="label" name="user-tel">
+            <span class="label-text">Телефон</span>
+            <div class="label-thumb">
+              <input class="imput-field" type="tel" id="user-tel">
+              <svg class="imput-img" width="18" hight="18">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </label>
 
-          <label name="user-email" for="user-email">Почта</label>
-          <input type="email" id="user-email">
+          <label class="label" name="user-email">
+            <span class="label-text">Почта</span>
+            <div class="label-thumb">
+              <input class="imput-field" type="email">
+              <svg class="imput-img" width="18" hight="18">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </label>
 
-          <label name="user-comment" for="user-comment">Комментарий</label>
-          <textarea id="user-comment" placeholder="Введите текст"></textarea>
+          <label class="label" name="user-comment">
+            <span class="label-text">Комментарий</span>
+            <textarea class="imput-field textarea" type="text" id="user-comment" placeholder="Введите текст"></textarea>
+          </label>
 
-          <label name="user-policy" for="user-policy">Соглашаюсь с рассылкой и принимаю <a href="">Условия
-              договора</a></label>
-          <input type="checkbox" id="user-policy">
+          <label class="checkbox" name="user-policy">
+            <input class="checkbox-browser" type="checkbox">
+            <span class="checkbox-costom"></span>
+            <span class="checkbox-text">Соглашаюсь с рассылкой и принимаю <a href="" target="_blank">Условия
+                договора</a>
+            </span>
+          </label>
+
 
           <button class="button modal-btn-submit" type="submit"><span>Отправить</span></button>
         </form>
