@@ -656,8 +656,7 @@ address {
   border-radius: 4px;
   padding: 15px 16px;
   outline: none;
-  transition: border-color 250ms var(--transition-timing-function),
-    opacity 550ms var(--transition-timing-function);
+  transition: border-color 250ms var(--transition-timing-function);
 }
 .footer-placeholder {
   position: absolute;
@@ -668,13 +667,13 @@ address {
   font-size: 16px;
   line-height: 1.25;
   color: var(--footer-text-color);
-  transition: opacity 250ms var(--transition-timing-function);
+  /* transition: opacity 250ms var(--transition-timing-function); */
 }
 .footer-field:focus {
   border-color: var(--accent-color);
 }
 
-.subscribe-form:focus-within .footer-placeholder,
+.subscribe-form:focus .footer-placeholder,
 .footer-field:not(:placeholder-shown) + .footer-placeholder {
   opacity: 0;
 }
@@ -806,10 +805,10 @@ address {
   line-height: 1.14;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
-  transition: opacity 250ms var(--transition-timing-function);
+  /* transition: opacity 250ms var(--transition-timing-function); */
 }
 
-.textarea-thumb:focus-within .placeholder,
+.textarea-thumb:focus .placeholder,
 .textarea:not(:placeholder-shown) + .placeholder {
   opacity: 0;
 }
