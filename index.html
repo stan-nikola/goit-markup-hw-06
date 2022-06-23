@@ -439,50 +439,52 @@
         </button>
         <h1 class="modal-title">Оставьте свои данные, мы вам перезвоним</h1>
         <form class="modal-form">
-          <label class="label" name="user-name">
+          <label class="label">
             <span class="label-text">Имя</span>
             <div class="label-thumb">
-              <input class="imput-field" type="text">
+              <input class="imput-field" name="user-name" type="text">
               <svg class="imput-img" width="18" hight="18">
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
             </div>
           </label>
 
-          <label class="label" name="user-tel">
+          <label class="label">
             <span class="label-text">Телефон</span>
             <div class="label-thumb">
-              <input class="imput-field" type="tel" id="user-tel">
+              <input class="imput-field" name="user-tel" type="tel">
               <svg class="imput-img" width="18" hight="18">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
             </div>
           </label>
 
-          <label class="label" name="user-email">
+          <label class="label">
             <span class="label-text">Почта</span>
             <div class="label-thumb">
-              <input class="imput-field" type="email">
+              <input class="imput-field" name="user-email" type="email">
               <svg class="imput-img" width="18" hight="18">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
             </div>
           </label>
 
-          <label class="label" name="user-comment">
+          <label class="label">
             <span class="label-text">Комментарий</span>
-            <textarea class="imput-field textarea" type="text" id="user-comment" placeholder="Введите текст"></textarea>
+            <div class="textarea-thumb">
+              <textarea class="imput-field textarea" type="text" name="user-comment" placeholder=" "></textarea>
+              <span class="placeholder">Введите текст</span>
+            </div>
           </label>
 
-          <label class="checkbox" name="user-policy">
-            <input class="checkbox-browser" type="checkbox">
+
+          <label class="checkbox">
+            <input class="checkbox-browser" name="user-policy" type="checkbox">
             <span class="checkbox-costom"></span>
             <span class="checkbox-text">Соглашаюсь с рассылкой и принимаю <a href="" target="_blank">Условия
                 договора</a>
             </span>
           </label>
-
-
           <button class="button modal-btn-submit" type="submit"><span>Отправить</span></button>
         </form>
       </div>
