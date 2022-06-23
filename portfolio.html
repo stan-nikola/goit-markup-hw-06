@@ -55,6 +55,7 @@
       <div class="container">
         <h1 class="visually-hidden">Portfolio</h1>
 
+        <!-- Filters -->
         <ul class="filter-item list">
           <li class="filter-inner">
             <button class="button portfolio-btn" type="button">Все</button>
@@ -73,6 +74,7 @@
           </li>
         </ul>
 
+        <!-- Projects -->
         <ul class="project-item list">
           <li class="project-inner">
             <a class="project-link link" href="" target="_blank">
@@ -245,6 +247,7 @@
     </section>
   </main>
 
+  <!-- footer -->
   <footer class="footer-page">
     <div class="container footer-item">
       <h2 class="visually-hidden">Contacts</h2>
@@ -304,10 +307,11 @@
       </div>
       <div class="subscribe">
         <p class="footer-subtitle">Подпишитесь на рассылку</p>
-        <form class="subscribe-form">
-          <input class="footer-field" type="email" name="subscribe" placeholder=" ">
+        <form class="subscribe-form" autocomplete="off">
+          <input class="footer-field" type="email" name="subscribe" placeholder=" " />
           <span class="footer-placeholder">E-mail</span>
-          <button class="button subscribe-btn " type="submit"><span>Подписаться</span>
+          <button class="button subscribe-btn" type="submit">
+            <span>Подписаться</span>
             <svg width="24" height="24">
               <use href="./images/icons.svg#icon-icon-send"></use>
             </svg>

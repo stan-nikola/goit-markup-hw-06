@@ -119,14 +119,14 @@
         <h2 class="work-title title-h2">Чем мы занимаемся</h2>
         <ul class="work-item list">
           <li class="work-inner">
-            <img class="work-img" src="./images/we-do/1.jpg" width="370" height="294" />
+            <img class="work-img" src="./images/we-do/1.jpg" width="370" height="294" alt="Десктопные приложения" />
             <p class="overlay-work">Десктопные приложения</p>
           </li>
           <li class="work-inner">
             <img class="work-img" src="./images/we-do/2.jpg" width="370" height="294" alt="Мобильные приложения" />
             <p class="overlay-work">Мобильные приложения</p>
           </li>
-          <li class=" work-inner">
+          <li class="work-inner">
             <img class="work-img" src="./images/we-do/3.jpg" width="370" height="294" alt="Дизайнерские решения" />
             <p class="overlay-work">Дизайнерские решения</p>
           </li>
@@ -134,7 +134,7 @@
       </div>
     </section>
     <!-- Team -->
-    <section class=" team section">
+    <section class="team section">
       <div class="container">
         <h2 class="team-title title-h2">Наша команда</h2>
         <ul class="team-item list">
@@ -417,10 +417,11 @@
       </div>
       <div class="subscribe">
         <p class="footer-subtitle">Подпишитесь на рассылку</p>
-        <form class="subscribe-form">
-          <input class="footer-field" type="email" name="subscribe" placeholder=" ">
+        <form class="subscribe-form" autocomplete="off">
+          <input class="footer-field" type="email" name="subscribe" placeholder=" " />
           <span class="footer-placeholder">E-mail</span>
-          <button class="button subscribe-btn " type="submit"><span>Подписаться</span>
+          <button class="button subscribe-btn" type="submit">
+            <span>Подписаться</span>
             <svg width="24" height="24">
               <use href="./images/icons.svg#icon-icon-send"></use>
             </svg>
@@ -431,65 +432,62 @@
   </footer>
 
   <!-- backdrop -->
-  <div class=" backdrop is-hidden" data-modal>
+  <div class="backdrop is-hidden" data-modal>
     <div class="modal" role="group">
-      <button class="modal-btn-close" data-modal-close tupe="button">
+      <button class="modal-btn-close" type="button" data-modal-close>
         <svg width="11" height="11">
           <use href="./images/icons.svg#icon-modal-close"></use>
         </svg>
       </button>
-      <h1 class="modal-title">Оставьте свои данные, мы вам перезвоним</h1>
-      <form class="modal-form">
+      <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+      <form class="modal-form" autocomplete="off">
         <label class="label">
           <span class="label-text">Имя</span>
-          <div class="label-thumb">
-            <input class="imput-field" name="user-name" type="text">
-            <svg class="imput-img" width="18" hight="18">
+          <span class="label-thumb">
+            <input class="imput-field" name="user-name" type="text" />
+            <svg class="imput-img" width="18" height="18">
               <use href="./images/icons.svg#icon-person"></use>
             </svg>
-          </div>
+          </span>
         </label>
 
         <label class="label">
           <span class="label-text">Телефон</span>
-          <div class="label-thumb">
-            <input class="imput-field" name="user-tel" type="tel">
-            <svg class="imput-img" width="18" hight="18">
+          <span class="label-thumb">
+            <input class="imput-field" name="user-tel" type="tel" />
+            <svg class="imput-img" width="18" height="18">
               <use href="./images/icons.svg#icon-phone"></use>
             </svg>
-          </div>
+          </span>
         </label>
 
         <label class="label">
           <span class="label-text">Почта</span>
-          <div class="label-thumb">
-            <input class="imput-field" name="user-email" type="email">
-            <svg class="imput-img" width="18" hight="18">
+          <span class="label-thumb">
+            <input class="imput-field" name="user-email" type="email" />
+            <svg class="imput-img" width="18" height="18">
               <use href="./images/icons.svg#icon-email"></use>
             </svg>
-          </div>
+          </span>
         </label>
 
         <label class="label">
           <span class="label-text">Комментарий</span>
-          <div class="label-thumb">
-            <textarea class="imput-field textarea" type="text" name="user-comment" placeholder=" "></textarea>
+          <span class="label-thumb">
+            <textarea class="imput-field textarea" name="user-comment" placeholder=" "></textarea>
             <span class="placeholder">Введите текст</span>
-          </div>
+          </span>
         </label>
 
-
         <label class="checkbox">
-          <input class="checkbox-browser" name="user-policy" type="checkbox">
+          <input class="checkbox-browser" name="user-policy" type="checkbox" />
           <span class="checkbox-costom"></span>
-          <span class="checkbox-text">Соглашаюсь с рассылкой и принимаю <a class="policy-link link" href=""
-              target="_blank">Условия
-              договора</a>
+          <span class="checkbox-text">Соглашаюсь с рассылкой и принимаю
+            <a class="policy-link link" href="" target="_blank">Условия договора</a>
           </span>
         </label>
         <button class="button modal-btn-submit" type="submit"><span>Отправить</span></button>
       </form>
-
     </div>
   </div>
   <script src="./js/modal.js"></script>
