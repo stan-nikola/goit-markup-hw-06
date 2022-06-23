@@ -834,7 +834,7 @@ address {
     border 250ms var(--transition-timing-function);
 }
 .checkbox-browser:focus + .checkbox-costom {
-  border: 2px solid var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 .checkbox-browser:checked + .checkbox-costom {
