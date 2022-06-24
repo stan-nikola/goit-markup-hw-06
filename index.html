@@ -418,7 +418,7 @@
       <div class="subscribe">
         <p class="footer-subtitle">Подпишитесь на рассылку</p>
         <form class="subscribe-form" autocomplete="off">
-          <input class="footer-field" type="email" name="subscribe" placeholder=" " />
+          <input class="footer-field" type="email" name="subscribe" placeholder=" " required />
           <span class="footer-placeholder">E-mail</span>
           <button class="button subscribe-btn" type="submit">
             <span>Подписаться</span>
@@ -439,12 +439,12 @@
           <use href="./images/icons.svg#icon-modal-close"></use>
         </svg>
       </button>
-      <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+      <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
       <form class="modal-form" autocomplete="off">
         <label class="label">
           <span class="label-text">Имя</span>
           <span class="label-thumb">
-            <input class="imput-field" name="user-name" type="text" />
+            <input class="imput-field" name="user-name" type="text" required />
             <svg class="imput-img" width="18" height="18">
               <use href="./images/icons.svg#icon-person"></use>
             </svg>
@@ -454,7 +454,7 @@
         <label class="label">
           <span class="label-text">Телефон</span>
           <span class="label-thumb">
-            <input class="imput-field" name="user-tel" type="tel" />
+            <input class="imput-field" name="user-tel" type="tel" required />
             <svg class="imput-img" width="18" height="18">
               <use href="./images/icons.svg#icon-phone"></use>
             </svg>
@@ -464,7 +464,7 @@
         <label class="label">
           <span class="label-text">Почта</span>
           <span class="label-thumb">
-            <input class="imput-field" name="user-email" type="email" />
+            <input class="imput-field" name="user-email" type="email" required />
             <svg class="imput-img" width="18" height="18">
               <use href="./images/icons.svg#icon-email"></use>
             </svg>
@@ -480,7 +480,7 @@
         </label>
 
         <label class="checkbox">
-          <input class="checkbox-browser" name="user-policy" type="checkbox" />
+          <input class="checkbox-browser" name="user-policy" type="checkbox" required />
           <span class="checkbox-costom"></span>
           <span class="checkbox-text">Соглашаюсь с рассылкой и принимаю
             <a class="policy-link link" href="" target="_blank">Условия договора</a>

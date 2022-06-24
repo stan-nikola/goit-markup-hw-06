@@ -669,6 +669,7 @@ address {
   color: var(--footer-text-color);
   /* transition: opacity 250ms var(--transition-timing-function); */
 }
+.footer-field:hover,
 .footer-field:focus {
   border-color: var(--accent-color);
 }
@@ -742,6 +743,7 @@ address {
   height: 30px;
   border-radius: 50%;
   padding: 0;
+  cursor: pointer;
   border: 1px solid rgba(0, 0, 0, 0.1);
   transition: color 250ms var(--transition-timing-function);
   fill: currentColor;
@@ -822,9 +824,12 @@ address {
   padding: 12px 16px;
   resize: none;
 }
+
+.label-thumb:hover .imput-field,
 .label-thumb:focus-within .imput-field {
   border-color: var(--accent-color);
 }
+.label-thumb:hover .imput-img,
 .label-thumb:focus-within .imput-img {
   fill: var(--accent-color);
 }
@@ -858,6 +863,7 @@ address {
     border-color 250ms var(--transition-timing-function),
     border 250ms var(--transition-timing-function);
 }
+.checkbox-browser:hover + .checkbox-costom,
 .checkbox-browser:focus + .checkbox-costom {
   border-color: var(--accent-color);
 }
